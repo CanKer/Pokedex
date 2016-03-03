@@ -1,0 +1,27 @@
+// colors
+$gray-light: #f2f2f2
+$blue: #2BC0E4
+#detalles  {
+  position: fixed;
+}
+body
+    background: linear-gradient(to left, #AA076B , #61045F)
+
+a
+    color: $gray-light
+    text-decoration: underline
+
+    &:hover
+        color: $blue
+
+button
+    outline: none
+
+#introduction
+    color: $gray-light
+
+.box-content
+    background: white
+    padding: 5px 14px
+    border-radius: 8px
+    overflow: hidden

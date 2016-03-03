@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+  </head>
+  <body>
+    <div>
+      <div>
+        <div id="introduction">
+          <h1>Help me to catch pokemons!</h1>
+          <p>Emprenderé una búsqueda para capturar pokemones, pero antes necesito recopilar información acerca de ellos. Debajo se encuentra una lista de todos los pokemones existentes, necesitaré acceder a la información de cada pokemon de una forma sencilla.</p>
+          <ol>
+            <li>Haz un fork de este codepen para que puedas trabajar y guardar tus cambios.</li>
+            <li>Aplicando exclusivamente clases de
+              <a href="http://getbootstrap.com/css/" target="_blank">bootstrap</a>
+              haz que en dispositivos de 750px de ancho o superior se formen 2 columnas: con el bloque "Pokemons" en la columna izquierda y el bloque "Pokemon detail" en la derecha.</li>
+            <li>Ayúdame a obtener su información al dar click en algún Pokemon de la lista. La información que necesito que se muestre en la columna derecha es su experiencia base, altura, peso y habilidades.</li>
+          </ol>
+          <p>La información de los pokemones se obtiene de una API RESTful puedes
+            <a href="http://pokeapi.co/" target="_blank">consultar la documentación</a>.</p>
+        </div>
+        <div class="col-sm-6">
+          <div class="box-content">
+            <h3>Pokemons</h3>
+            <div id="list-pokemons" class="list-group"></div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="box-content fixed" style="position: fixed" id="detalles">
+            <h3>Pokemon detail</h3>
+            <div id="pokedex" class="clearfix">
+              <div class="table-responsive">
+                <h2 id="nombre" class="text-capitalize"></h2>
+                <table class="table table-bordered text-center">
+                  <thead>
+                    <th>Número</th>
+                    <th>Experiencia</th>
+                    <th>Altura</th>
+                    <th>Peso</th>
+                    <th>Habilidades</th>
+                  </thead>
+                  <tbody>
+                    <tr id="datos" class="text-left">
+                      <td id="no"></td>
+                      <td id="exp"></td>
+                      <td id="alt"></td>
+                      <td id="peso"></td>
+                      <td id="habilidades">
+
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/jquery-2.2.1.min.js"></script>
+    <script src="js/pokedex.js"></script>
+  </body>
+</html>
